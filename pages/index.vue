@@ -1,5 +1,5 @@
 <script setup>
-const { data: scizor } = await useFetch('/api/scizor')
+const { data: scizor } = await useFetch('/api/charizard')
 
 
 </script>
