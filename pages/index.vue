@@ -1,9 +1,5 @@
 <script setup>
-const scizor = await useAsyncData('scizor', () => {
-  $fetch('https://pokeapi.co/api/v2/pokemon/scizor').then(
-        res => res.json())
-
-})
+const { data: scizor } = await useFetch('https://pokeapi.co/api/v2/pokemon/scizor')
 
 </script>
 
