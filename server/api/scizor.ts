@@ -1,3 +1,5 @@
-export default defineEventHandler(event => {
-    return 'Hello from the Scizo API!'
+export default defineEventHandler(async event => {
+  const response = await $fetch('https://pokeapi.co/api/v2/pokemon/scizor')
+
+  return response
 })
